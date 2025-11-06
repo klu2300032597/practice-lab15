@@ -41,4 +41,4 @@ jobs:
           context: ./carfrontend
           file: ./carfrontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansibleprac-frontend:latest
+          tags: ${{ secrets.DOCKER_USER }}/ansibleprac-frontend:latest
