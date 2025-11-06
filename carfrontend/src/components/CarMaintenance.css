@@ -1,0 +1,155 @@
+/* --- General Layout --- */
+.maintenance-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f5f7fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* --- Message Section --- */
+.message {
+  background: #e3f7e3;
+  border: 1px solid #b6e1b6;
+  color: #2e7d32;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.error {
+  background: #fdeaea;
+  border-color: #f5b5b5;
+  color: #b71c1c;
+}
+
+/* --- Form Styling --- */
+.maintenance-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.maintenance-form input {
+  flex: 1 1 45%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.maintenance-form input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-submit {
+  background-color: #4a90e2;
+  color: white;
+  flex: 1 1 100%;
+}
+
+.btn-submit:hover {
+  background-color: #3b7bcc;
+}
+
+/* --- Table Styling --- */
+.table-container {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.styled-table thead tr {
+  background-color: #4a90e2;
+  color: #fff;
+  text-align: left;
+  font-weight: 600;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f2f5f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e8f0fe;
+  transition: background 0.2s;
+}
+
+/* --- Buttons inside table --- */
+.btn-edit {
+  background-color: #ffb74d;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.btn-edit:hover {
+  background-color: #f39c12;
+}
+
+.btn-delete {
+  background-color: #e57373;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* --- No Data Text --- */
+.no-data {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .maintenance-form input {
+    flex: 1 1 100%;
+  }
+  .btn-submit {
+    width: 100%;
+  }
+}
